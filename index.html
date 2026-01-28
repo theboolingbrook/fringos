@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fringos Gujranwala - Premium handcrafted burgers with premium ingredients and urban vibes.">
+  <meta name="theme-color" content="#000000">
+  <title>Fringos Gujranwala | Premium Handcrafted Burgers</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-logo">
+        <img src="public/568473924_17969880029958721_8439813147265359548_n.jpg" alt="Fringos Logo" class="logo-img">
+        <span class="logo-text">FRINGOS</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="nav-links-desktop">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Desktop Socials -->
+      <div class="nav-socials-desktop">
+        <a href="https://www.facebook.com/share/1CRwsSFeAj/" target="_blank" class="social-icon facebook-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/fringos.pk?igsh=ZWlqNmM4cWZxanRo" target="_blank" class="social-icon instagram-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 2.16c5.413 0 9.84 4.427 9.84 9.84S17.413 21.84 12 21.84 2.16 17.413 2.16 12 6.587 2.16 12 2.16m0 1.62c-4.54 0-8.22 3.68-8.22 8.22s3.68 8.22 8.22 8.22 8.22-3.68 8.22-8.22-3.68-8.22-8.22-8.22m0 13.32c-2.814 0-5.1-2.286-5.1-5.1s2.286-5.1 5.1-5.1 5.1 2.286 5.1 5.1-2.286 5.1-5.1 5.1m6.48-13.32c-.648 0-1.176.528-1.176 1.176s.528 1.176 1.176 1.176 1.176-.528 1.176-1.176-.528-1.176-1.176-1.176z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Cart Button -->
+      <button class="cart-btn" id="cartBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="close-icon" style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+      <a href="#home" class="mobile-nav-link" data-target="home">Home</a>
+      <a href="#menu" class="mobile-nav-link" data-target="menu">Menu</a>
+      <a href="#about" class="mobile-nav-link" data-target="about">About</a>
+      <a href="#contact" class="mobile-nav-link" data-target="contact">Contact</a>
+      <div class="mobile-nav-socials">
+        <a href="https://www.facebook.com/share/1CRwsSFeAj/" target="_blank" class="social-icon facebook-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/fringos.pk?igsh=ZWlqNmM4cWZxanRo" target="_blank" class="social-icon instagram-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 2.16c5.413 0 9.84 4.427 9.84 9.84S17.413 21.84 12 21.84 2.16 17.413 2.16 12 6.587 2.16 12 2.16m0 1.62c-4.54 0-8.22 3.68-8.22 8.22s3.68 8.22 8.22 8.22 8.22-3.68 8.22-8.22-3.68-8.22-8.22-8.22m0 13.32c-2.814 0-5.1-2.286-5.1-5.1s2.286-5.1 5.1-5.1 5.1 2.286 5.1 5.1-2.286 5.1-5.1 5.1m6.48-13.32c-.648 0-1.176.528-1.176 1.176s.528 1.176 1.176 1.176 1.176-.528 1.176-1.176-.528-1.176-1.176-1.176z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Your Order</h2>
+        <button class="cart-close-btn" id="cartCloseBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <div class="cart-empty">Your cart is empty</div>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Grand Total</span>
+          <span class="total-price" id="totalPrice">Rs. 0</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn" disabled>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <path d="M6.63 15.038a4.5 4.5 0 0 1 7.665 4.282"></path>
+            <path d="M9 17A6 6 0 0 0 3 3"></path>
+          </svg>
+          Order via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <img src="public/buffalo-chicken-burger.jpg" alt="Hero Background" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">Now Serving Gujranwala</div>
+      <h1 class="hero-title">
+        <span>Handcrafted</span>
+        <span>Burgers</span>
+      </h1>
+      <p class="hero-subtitle">Premium Ingredients • QUALITY FOOD • Legendary Taste</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+        <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Visit Us</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="menu-container">
+      <div class="menu-header">
+        <h2>FRINGOS Menu</h2>
+        <p>Fuel your cravings with our elite selection</p>
+      </div>
+
+      <div class="menu-categories" id="menuCategories">
+        <!-- Categories will be inserted here by JavaScript -->
+      </div>
+
+      <div class="menu-items-grid" id="menuItemsGrid">
+        <!-- Menu items will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section id="about" class="story">
+    <div class="story-container">
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <div class="story-content">
+          <p>Born from a passion for bold flavors and unforgettable bites, Fringos began with a simple mission:
+to elevate the fast-food experience in Gujranwala.</p>
+          <p>At Fringos, we don’t just cook food — we craft experiences.
+Every sauce is uniquely crafted, every bun is perfectly toasted,
+and every bite reflects our dedication to quality, creativity,
+and crave-worthy taste.</p>
+          <div class="story-stats">
+            <div>
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Fresh Meat</span>
+            </div>
+            <div>
+              <span class="stat-value">Luxury</span>
+              <span class="stat-label">Environment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-image">
+        <img src="public/WhatsApp Image 2026-01-28 at 6.34.20 PM (1).jpeg" alt="Burger Craft">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Our Fringos</h2>
+        <p>Located in the heart of Gujranwala, Fringos is where street-style cravings
+meet bold, modern flavors. We believe in big bites, rich sauces,
+and food that leaves a lasting impression.</p>
+        <div class="contact-socials">
+          <a href="https://www.facebook.com/share/1CRwsSFeAj/" target="_blank" class="social-btn facebook-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/fringos.pk?igsh=ZWlqNmM4cWZxanRo" target="_blank" class="social-btn instagram-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 2.16c5.413 0 9.84 4.427 9.84 9.84S17.413 21.84 12 21.84 2.16 17.413 2.16 12 6.587 2.16 12 2.16m0 1.62c-4.54 0-8.22 3.68-8.22 8.22s3.68 8.22 8.22 8.22 8.22-3.68 8.22-8.22-3.68-8.22-8.22-8.22m0 13.32c-2.814 0-5.1-2.286-5.1-5.1s2.286-5.1 5.1-5.1 5.1 2.286 5.1 5.1-2.286 5.1-5.1 5.1m6.48-13.32c-.648 0-1.176.528-1.176 1.176s.528 1.176 1.176 1.176 1.176-.528 1.176-1.176-.528-1.176-1.176-1.176z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="branches-grid" id="branchesGrid">
+        <!-- Branches will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Fringos GUJRANWALA. ALL RIGHTS RESERVED.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
